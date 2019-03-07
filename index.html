@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game</title>
+    <!-- Load jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
-    <h1>Crytsal Collector</h1>
-    <br>
+    <h1>Crystal Collector</h1>
+  
     <p>Each gem is a value</p>
-    <br>
+    
     <p>click on the gem to change you score</p>
-    <br>
+    
     <p>Use the gems to achieve the target score</p>
-    <br>
+    
     <p>Every new round changes their value</p>
     <br>
 
@@ -26,12 +29,16 @@
     <div>Losses: <span id="loss-counter"></span></div>
 
     <br>
-    <button id="button-1"></button>
-    <button id="button-2"></button>
-    <button id="button-3"></button>
-    <button id="button-4"></button>
+    <button id="button-1" class="btn" value="0"></button>
+    <button id="button-2" class="btn" value="0"></button>
+    <button id="button-3" class="btn" value="0"></button>
+    <button id="button-4" class="btn" value="0"></button>
     <br>
 
     <div>Your Total Score: <span id="user-score"></span></div>
+
+
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
