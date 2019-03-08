@@ -1,0 +1,50 @@
+.jumbotron.jumbotron-fluid {
+    margin: auto;
+    text-align: center;
+    background: purple;
+    color: white;
+    width: 900px;
+
+}
+.display-4 {
+    font-weight: 800;
+}
+
+.target-card {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 900px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+.col-lg-6 {
+    margin-bottom: 20px;
+}
+
+.card {
+    text-align: center;
+    height: 130px;
+}
+
+.btn {
+    margin: auto;
+}
+
+.card-title {
+    margin: auto;
+    font-size: 35px;
+}
+
+.yellow-emerald {
+    height: 70px;
+    width: 70px;
+}

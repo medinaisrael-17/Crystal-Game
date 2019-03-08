@@ -33,9 +33,14 @@ $(document).ready(function () {
 
 
         $("#button-1").val(btn1);
+        console.log($("#button-1").val())
         $("#button-2").val(btn2);
+        console.log($("#button-2").val())
         $("#button-3").val(btn3);
+        console.log($("#button-3").val())
         $("#button-4").val(btn4);
+        console.log($("#button-4").val())
+        console.log("================");
         $("#target-score").val(targetScore);
         $("#target-score").text(targetScore);
         $("#user-score").val(userScore);

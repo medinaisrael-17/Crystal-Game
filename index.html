@@ -1,44 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Load jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
+
 <body>
-    <h1>Crystal Collector</h1>
-  
-    <p>Each gem is a value</p>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Crystal Collector</h1>
+            <p class="lead">Each gem is a value</p>
+            <p class="lead">Click on the gem to change you score</p>
+            <p class="lead">Use the gems to achieve the target score</p>
+            <p class="lead">Every new round changes their value</p>
+        </div>
+    </div>
+
+    <br>
     
-    <p>click on the gem to change you score</p>
-    
-    <p>Use the gems to achieve the target score</p>
-    
-    <p>Every new round changes their value</p>
-    <br>
 
-    <div>Target: <span id="target-score"></span></div>
+    <div class="card target-card">
+        <h5 class="card-header">Target</h5>
+        <div class="card-body">
+            <h5 class="card-title"><span id="target-score"></span></h5>
+        </div>
+    </div>
 
-    <br>
-    <div>Wins: <span id="win-counter"></span></div>
-    <br>
-    <div>Losses: <span id="loss-counter"></span></div>
+    <div class="container">
 
-    <br>
-    <button id="button-1" class="btn" value="0"></button>
-    <button id="button-2" class="btn" value="0"></button>
-    <button id="button-3" class="btn" value="0"></button>
-    <button id="button-4" class="btn" value="0"></button>
-    <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <h5 class="card-header">Wins</h5>
+                    <div class="card-body">
+                        <h5 class="card-title"><span id="win-counter"></span></h5>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-lg-6">
+                <div class="card">
+                    <h5 class="card-header">Losses</h5>
+                    <div class="card-body">
+                        <h5 class="card-title"><span id="loss-counter"></span></h5>
+                    </div>
+                </div>
+            </div>
 
-    <div>Your Total Score: <span id="user-score"></span></div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="card">
+                    <h5 class="card-header"></h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="row-lg-3"></div>
+                            <h5 class="card-title">
+                                <button id="button-1" class="btn" value="0">
+                                    <img src="assets/images/red_emerald.png">
+                                </button>
+                            </h5>
+                            <div class="row-lg-3"></div>
+                            <h5 class="card-title">
+                                <button id="button-2" class="btn" value="0">
+                                    <img src="assets/images/blue_emerald.png">
+                                </button>
+                            </h5>
+                            <div class="row-lg-3"></div>
+                            <h5 class="card-title">
+                                <button id="button-3" class="btn" value="0">
+                                    <img class="yellow-emerald" src="assets/images/yellow_emerald.png">
+                                </button>
+                            </h5>
+                            <div class="row-lg-3"></div>
+                            <h5 class="card-title">
+                                <button id="button-4" class="btn" value="0">
+                                    <img src="assets/images/green_emerald.png">
+                                </button>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card">
+                    <h5 class="card-header">Your Total Score</h5>
+                    <div class="card-body">
+                        <h5 class="card-title"><span id="user-score"></span></h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 
 
-
+    <!-- link to our javascript -->
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
